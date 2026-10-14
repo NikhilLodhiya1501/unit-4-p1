@@ -1,0 +1,37 @@
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: Arial, sans-serif;
+  background: #0b1020; color: #f8fafc;
+}
+.portfolio {
+  min-height: 100vh; padding: 24px 7%;
+  background: radial-gradient(ellipse at 75% 35%, #29205a 0%, #0b1020 60%);
+}
+.nav {
+  display: flex; justify-content: space-between;
+  align-items: center; gap: 16px; flex-wrap: wrap;
+  border-bottom: 1px solid #ffffff20; padding: 14px 0 25px;
+}
+.logo { font-size: 32px; font-weight: 900; }
+.logo span, .hero h1 span, footer span { color: #8b7cff; }
+.navlinks { display: flex; gap: 24px; }
+.navlinks a { color: #b8c0d4; text-decoration: none; }
+.navlinks a.active { color: #a99cff; border-bottom: 2px solid #8b7cff; padding-bottom: 8px; }
+.available { color: #7cf5c7; font-size: 13px; }
+.hero { max-width: 780px; margin: 90px auto; text-align: center; }
+.eyebrow { color: #a99cff; letter-spacing: 3px; font-size: 12px; }
+.hero h1 { font-size: clamp(38px, 7vw, 76px); margin: 24px 0; }
+.hero > p:not(.eyebrow) { color: #b8c0d4; line-height: 1.8; }
+.stats { display: flex; justify-content: center; gap: 50px; margin-top: 50px; }
+.stats h2 { color: #8b7cff; margin-bottom: 4px; }
+.stats p { color: #9ca3af; }
+.chip-row { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.chip-row span { border: 1px solid #7567db; border-radius: 24px; padding: 10px 18px; }
+.cta { display: inline-block; margin-top: 20px; padding: 14px 24px; background: #7965ec; color: white; border-radius: 12px; text-decoration: none; }
+footer { text-align: center; color: #788198; font-size: 11px; letter-spacing: 3px; padding: 24px; }
+@media (max-width: 500px) {
+  .portfolio { padding: 18px 5%; }
+  .stats { gap: 22px; }
+  .navlinks { gap: 12px; }
+}
